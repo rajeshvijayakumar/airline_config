@@ -1,0 +1,14 @@
+server:
+  port: 9050
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/vitara_ancillary_db
+    username: root
+    password: root
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true

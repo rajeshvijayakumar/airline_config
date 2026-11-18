@@ -1,0 +1,29 @@
+server:
+  port: 9200
+spring:
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/vitara_payment_db
+    username: root
+    password: root
+
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+
+razorpay:
+  api:
+    key: rzp_test_U1CJGBmZvarDH1
+    secret: 8uLtU03iv5gmQqtDAniRb1Vs
+
+  callback:
+    base-url: http://localhost:5173
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
